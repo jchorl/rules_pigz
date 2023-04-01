@@ -1,4 +1,4 @@
-load(":pigz_toolchain.bzl", "pigz_toolchain")
+load("//:toolchain.bzl", "pigz_toolchain")
 
 toolchain_type(name = "toolchain_type")
 
