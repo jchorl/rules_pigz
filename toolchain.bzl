@@ -3,7 +3,7 @@ PigzInfo = provider(
     fields = ["bin_path"],
 )
 
-def _pigz_toolchain_impl(ctx):
+def _toolchain_configure_impl(ctx):
     toolchain_info = platform_common.ToolchainInfo(
         pigzinfo = PigzInfo(
             bin_path = ctx.file.bin_path,
@@ -11,8 +11,8 @@ def _pigz_toolchain_impl(ctx):
     )
     return [toolchain_info]
 
-pigz_toolchain = rule(
-    implementation = _pigz_toolchain_impl,
+toolchain_configure = rule(
+    implementation = _toolchain_configure_impl,
     attrs = {
         "bin_path": attr.label(
             allow_single_file=True,
