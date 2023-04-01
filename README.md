@@ -14,7 +14,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 http_archive(
     name = "rules_pigz",
     url = "https://github.com/jchorl/rules_pigz/archive/v0.0.2.tar.gz",
-    sha256 = "2fa720a32d0cc60fa30ace3b0a2b4d8d33d42d80ec8fb3646863bd798ba7fc6d",
+    sha256 = "7e34200ce3364d782753ae50db5c5960e1607a1e91a9a5ad37ffd0846e890d1b",
     strip_prefix = "rules_pigz-0.0.2"
 )
 load(
