@@ -35,7 +35,7 @@ cc_binary(
     deps = [":zopfli"],
     visibility = ["//visibility:public"],
 )""",
-        sha256 = "d4396b58bc2875daf8dc3ae9a657be945c2c2697944894fea8a72634eded93ab",
-        strip_prefix = "pigz-2.7",
-        url = "https://github.com/madler/pigz/archive/refs/tags/v2.7.zip",
+        sha256 = "2f7f6a6986996d21cb8658535fff95f1c7107ddce22b5324f4b41890e2904706",
+        strip_prefix = "pigz-2.8",
+        url = "https://github.com/madler/pigz/archive/refs/tags/v2.8.tar.gz",
     )
